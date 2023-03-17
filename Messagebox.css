@@ -1,0 +1,119 @@
+dialog{
+  visibility:visible;
+  border:solid blue 1px;
+  box-shadow:2px 2px 5px black;
+  width:200px;
+  border-radius:2px;
+  overflow:hidden;
+}
+dialog::before{
+  content:"\00A0\00A0\2139\00A0";
+  color:white;
+  background:blue;
+  position:absolute;
+  width:calc(100% - 18px + 1px);
+  height:16px;
+  top: calc(0px - 1px);
+  left: 0px;
+  overflow:hidden;
+  font-size:10px;
+}
+dialog > .messageTitle{
+  color:white;
+  background:blue;
+  position:absolute;
+  width:calc(100% - 18px - 15px + 1px);
+  height:16px;
+  top: calc(0px - 1px);
+  left: 15px;
+  overflow:hidden;
+  font-size:10px;
+}
+dialog > .messageClose{
+    /*content:"\2795";*/
+  text-align:center;
+  color:white;
+  /*transform:rotate(45deg);*/
+  Border-radius:2px;
+  background:red;
+  position:absolute;
+  width:18px;
+  height:16px;
+  top: calc(0px - 1px);
+  left: calc(100% - 18px + 1px);
+  cursor:pointer;
+  z-index: 100;
+}
+dialog .messageLogoInfo::before{
+  content:"\2139";
+  background:rgb(160,210,250);
+  color:rgb(0,10,220);
+  width:20px;
+  height:20px;
+  text-align:center;
+  border-radius:10px;
+  position:absolute;
+  font-size:15px;
+}
+dialog .messageLogoAsk::before{
+  content:"\2754";
+  background:rgb(10,20,250);
+  width:20px;
+  height:20px;
+  text-align:center;
+  border-radius:10px;
+  position:absolute;
+  font-size:14px;
+}
+dialog .messageLogoAlarm::before{
+  content:"\2757";
+  background:rgb(250,210,160);
+  color:rgb(220,10,0);
+  width:20px;
+  height:20px;
+  text-align:center;
+  border-radius:10px;
+  position:absolute;
+  font-size:15px;
+}
+dialog .messageLogoError::before{
+  content:"\274C";
+  background:rgb(255,200,200);
+  color:rgb(220,10,0);
+  width:20px;
+  height:20px;
+  text-align:center;
+  border-radius:10px;
+  position:absolute;
+  font-size:15px;
+}
+dialog .messageContent{
+  position:relative;
+  left:calc(5px + 20px);
+  top:0px;
+  width:100%;
+  height:80%;
+}
+dialog > .messageButton{
+  position:relative;
+  left:0px;
+  top:80%;
+  width:100%;
+  height:20%;
+  text-align:center;
+}
+dialog > .messageButton > button{
+  position:relative;
+  background:rgb(230,230,230);
+  box-shadow:1px 1px 1px black;
+  border:solid 1px black;
+  cursor:pointer;
+}
+dialog > .messageButton > button:hover{
+  background:rgb(220,220,220);
+}
+dialog > .messageButton > button:active{
+  box-shadow:-1px -1px 0px rgb(50,50,50);
+  border:dotted 1px black;
+  background:rgb(180,180,180);
+}

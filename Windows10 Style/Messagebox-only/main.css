@@ -117,7 +117,7 @@ body{
 .bothBlockButton{
   box-sizing: border-box;
   margin-right: 10px;
-  min-width: 77px;
+  width: 77px;
   height: 25px;
   border-radius: 0;
   outline: none;

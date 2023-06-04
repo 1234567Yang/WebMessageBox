@@ -1,0 +1,356 @@
+body{
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  height: 100%;
+}
+
+.theBackground{
+  left:0px;
+  top:0px;
+  width:100%;
+  height:100%;
+  position:fixed;
+  background-size:100% 100%;
+  background-image: url("Win7Background.webp");
+  z-index: -1;
+}
+.whiteOutline{
+  left:9px;
+  top:9px;
+  position: absolute;
+  width: 430px;
+  height: calc(159px + 3px + 1.5px * 2); /*1.5*2因为有divLine,3px好看且复原*/
+  border-style:solid;
+  border-radius:9px;
+  border-width:1px;
+  border-color:rgb(233,242,248);
+  background:white;
+  box-shadow: 0px 0px 2px 1px black;
+}
+
+.main-block{
+  left:10px;
+  top:10px;
+  position: relative;
+  width: 430px;
+  height: calc(159px + 3px + 1.5px * 2); /*1.5*2因为有divLine,3px好看且复原*/
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  /*box-shadow: 0px 0px 1px 1px rgb(5,29,48);*/
+
+  background-color: rgba(35,113,175,0.9);
+  border-radius:8px;
+  border-style: solid;
+  border-width:5px;
+  border-top:0px;
+  border-color:rgba(83,170,218,0.2);
+  margin: 0;
+  margin-top: 0;
+}
+
+.toolbar{
+  position:relative;
+  height: 27px;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  display: flex;
+  z-index:98;
+  background-color:rgba(83,170,218,0.2);
+}
+.titleLogo{
+  height: 16px;
+  width:16.5px;
+  top:6px;
+  left:3px;
+  position:absolute;
+  border: none;
+  outline: none;
+  max-width: 100%;
+}
+.toolbarText{
+  font-size:8px;
+  letter-spacing: -0.5px;
+  margin: 0;
+  position:absolute;
+  top:5px;
+  left:calc(20px + 3px * 2);
+  align-items: center;
+  z-index:100;
+}
+
+.toolbarTextBackground{
+  letter-spacing: -0.5px;
+  font-size:8px;
+  color:rgba(0,0,0,0);
+  margin: 0;
+  position:absolute;
+  top:14px;
+  height:0px;
+  left:calc(20px + 3px * 2);
+  align-items: center;
+  box-shadow: 0px 0px 12px 5px rgba(255,255,255,0.9);
+  z-index:99;
+}
+
+.toolbarButtonGroup{
+  font-size:0px;
+  position: absolute;
+  right: 2px;
+}
+
+.toolButton{
+  height: 18.5px;
+  width:45px;
+  border: none;
+  outline: none;
+  /*background: radial-gradient(rgb(192, 61, 40) 50%,rgb(156, 56, 47) 49%);*/
+  background: linear-gradient(to right,rgb(156, 56, 47),rgb(200, 40, 40),rgb(156, 56, 47));
+  border-bottom-left-radius:4px;
+  border-bottom-right-radius:4px;
+  max-width: 100%;
+  align-items: center;
+}
+
+.toolButtonHalf{
+  position:absolute;
+  left:1px;
+  top:1px;
+  height: calc(18.5px / 2);
+  width:43px;
+  background:linear-gradient(to top,rgba(255,255,255,0.2),rgba(255,255,255,0.4),rgba(255, 255,255,0.6));
+  color:rgba(0,0,0,0);
+  /*border-top-style: solid;
+  border-top-width:0.1px;
+  border-top-color:rgb(246,221,203)*/
+}
+
+.toolButtonCloseICO{
+  position:absolute;
+  left:calc(45px / 2 - 11px / 2);
+  top:calc(20px - 15px);
+  width:11px;
+  height:10px;
+}
+.toolButton::before{
+  content:"";
+  left:1px;
+  top:1px;
+  height: calc(18.5px - 1px * 2);
+  width:calc(45px - 1px * 2);
+  position:absolute;
+  border: none;
+  outline: none;
+  border-bottom-left-radius:4px;
+  border-bottom-right-radius:4px;
+  max-width: 100%;
+  align-items: center;
+  box-shadow: inset 0px 0px 1px 0.2px white;
+  
+}
+.toolButton:hover{
+}
+
+.close-btn{
+  border-style: solid;
+  border-width:0.1px;
+  border-color:rgb(90,45,39);
+    box-shadow: 0px 0px 1px 0.5px white;
+}
+
+.close-btn:hover{
+  background: linear-gradient(to right,rgb(134,48,34),rgb(197,41,14),rgb(197,41,14),rgb(134,48,34));
+}
+.close-btn::after{
+  content:"\a0\a0";
+  top:calc(18.5px - 1px - 1px);
+  left:1px;
+  height:1px;
+  position:absolute;
+  /*box-shadow:0px 1px 10px rgb(230, 176, 99);*/
+  /*background:linear-gradient(to top,rgba(231,176,100,0.7),rgba(231,176,100,0.1));8*/
+  background: linear-gradient(to right,rgb(200,180,120),rgb(250,250,100),rgb(200,180,120));
+  border-bottom-left-radius:5px;
+  border-bottom-right-radius:5px;
+  width:43px;
+  pointer-events:none;
+  filter: blur(2px);
+}
+
+.close-btn:hover::after, .close-btn:active::after{
+  content:"\a0\a0";
+  top:calc(18.5px - 1px - 1px);
+  left:1px;
+  height:1px;
+  position:absolute;
+  /*box-shadow:0px 1px 10px rgb(230, 176, 99);*/
+  /*background:linear-gradient(to top,rgba(231,176,100,0.7),rgba(231,176,100,0.1));8*/
+  background: linear-gradient(to right,rgb(200,180,120),rgb(250,250,100),rgb(200,180,120));
+  border-bottom-left-radius:5px;
+  border-bottom-right-radius:5px;
+  width:43px;
+  pointer-events:none;
+  filter: blur(1px);
+}
+
+.close-btn:active{
+  background: linear-gradient(to right,rgb(64,16,0),rgb(135,37,5),rgb(64,16,0));
+}
+
+
+.block-content{
+  background-color:rgb(255,255,255);
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  height: 90px;
+  display: flex;
+  border-color:rgb(50,78,87);
+  border-style:solid;
+  border-width:1px;
+  
+  border-bottom-width:0px !important;
+  
+  box-shadow: -1px 0px 1px 0.1px white,1px 0px 1px 0.1px white;
+}
+
+.ContentLogo{
+  left:13px;
+  top:18px;
+  height:45px;
+  width:45px;
+  position:relative;
+  max-width: 100%;
+}
+
+.textMessage{
+
+  font-size: 12px;
+  line-height:18px;
+  box-sizing: border-box;
+  padding: 20px;
+  /*padding-left: 20px;
+  padding-right: 20px;*/
+  left:calc(13px * 2 + 45px - 5px);
+  position:absolute;
+  width: calc(100% - 13px * 2 - 45px);
+  height:125px;
+  word-break:break-word;
+  overflow:hidden;
+  letter-spacing: -0.3px;
+}
+
+.block-buttons{
+  position:relative;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 40px;
+  border-bottom: 1px solid rgb(231,231,231);
+  background-color: rgb(240,240,240);
+  
+  
+  border-color:rgb(50,78,87);
+  border-style:solid;
+  border-width:1px;
+  
+  border-bottom-width:0px !important;
+  border-top-width:0px !important;
+  
+  box-shadow: -1px 0px 1px 0.1px white,1px 0px 1px 0.1px white;
+}
+
+.bothBlockButton{
+  border-radius:5px;
+  box-sizing: border-box;
+  margin-right: 8px;
+  width: 75px;
+  height: 24px;
+  outline: none;
+  color:rgba(0,0,0,0);
+  border: 1px solid rgb(112,112,112);
+  background-color:rgb(216,216,216);
+  cursor:pointer;
+}
+
+.bothBlockButton:hover{
+  background-color:rgb(227,230,237);
+}
+
+.bothBlockButton:active{
+  background: linear-gradient(to top,rgb(148,183,201),rgb(195,210,217),rgb(195,210,217));
+}
+
+.bothHalfButton{
+  width: 73px;
+  height: 12px;
+  background:rgba(255,255,255,0.5);
+  position:absolute;
+  border-top-left-radius:3px;
+  border-top-right-radius:3px;
+  font-family: "Open Sans";
+  font-size:13px;
+  text-align:center;
+  line-height:21px;
+  pointer-events:none;
+}
+
+.non-defaultHalfButton{
+  top:10px;
+  left:calc(250px + 8px + 75px + 3px);
+}
+
+.defaultHalfButton{
+  top:10px;
+  left:calc(250px + 3px);
+}
+
+
+
+.defaultButton{
+  
+}
+.non-defaultButton{
+}
+
+.block-footer{
+  font-family: "Open Sans", sans-serif;
+  font-size:5px;
+  box-sizing: border-box;
+  background-color: rgb(240,240,240);
+  height: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 10px; /* top and bottom | left and right */
+  
+  
+  border-color:black;
+  border-style:solid;
+  border-width:1px;
+  
+  border-top-width:0px !important;
+  /*border-top-color:rgb(223,223,223);
+  border-top-width:2px;*/
+    
+  box-shadow: -1px 0px 1px 0.1px white, 0px 1px 1px 0.1px white, 1px 0px 1px 0.1px white;
+}
+
+.divLine{
+  border-color:rgb(50,78,87);
+  border-style:solid;
+  border-width:1px;
+  border-top-width:0px !important;
+  border-bottom-width:0px !important;
+  box-shadow: -1px 0px 1px 0.1px white, 1px 0px 1px 0.1px white;
+  left:0px;
+  width:calc(100% - 2px);
+  height:1.5px;
+  /*由于有box-shadow，再加一点模糊*/
+  filter: blur(0.1px);
+  background-color:rgb(223,223,223);
+  position:relative;
+}

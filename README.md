@@ -26,6 +26,11 @@ I just "stole" the code from a phishing site.
 I spent whole day and finally made it. The UI is really similar and I will fix small difference later.
 <br>
 一整天时间肝出来的，基本复原Windows7信息框，小问题以后修。
+
+2023/6/17 Supplement:(2023/6/17补充)
+I don't know what's wrong with the Edge browser on my computer, but the effect is different from other computers. It is now fixed.
+我电脑Edge浏览器不知道犯什么病，就是和别的电脑出来的效果不一样。现在已经修复。
+
 </details>
 <br>
 

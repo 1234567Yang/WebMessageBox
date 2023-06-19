@@ -28,7 +28,7 @@ Internet Explorer ❌
 ## Styles detail information
 
 <details><summary>Windows11 style</summary>
-Highly restored~
+Highly imitated~
 <br>
 高度还原~
 </details>

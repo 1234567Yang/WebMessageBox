@@ -15,11 +15,15 @@ Use CSS+HTML to imitate Windows pop-up window
 ## Compatibility
 
 Microsoft Edge ✅
+<br>
 Google Chrome ✅
+<br>
 Firefox ✅
+<br>
 Opera Internet Browser ✅
+<br>
 Internet Explorer ❌
-
+<br>
 
 ## Styles detail information
 
@@ -56,8 +60,6 @@ I gave up that Messagebox because I wrote it when I just began to learn CSS and 
 <br>
 我放弃那个Messagebox，因为我刚开始学CSS和HTML的时候写的，所以代码真的很烂。（人话：懒得写）
 </details>
-<br>
-
 <br>
 
 ## Contribute

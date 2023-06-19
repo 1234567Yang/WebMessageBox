@@ -1,3 +1,8 @@
+*{
+  user-select:none;
+}
+
+
 body{
     box-sizing: border-box;
     overflow: hidden;
@@ -10,8 +15,8 @@ body{
 
 
 .main-block{
-  left:10px;
-  top:10px;
+  left:calc(50vw - 580px / 2);
+  top:calc(50vh - 280px / 2);
   font-family: "Open Sans", sans-serif;
   box-sizing: border-box;
   position: relative;
@@ -29,7 +34,14 @@ body{
     box-sizing: border-box;
     display: flex;
 }
-
+.toolbarText{
+  position:absolute;
+  top:3.5px;
+  left:6px;
+  font-family: "Open Sans", sans-serif;
+  font-size:15px;
+  
+}
 .toolbarButtonGroup{
   font-size:0px;
   position: absolute;

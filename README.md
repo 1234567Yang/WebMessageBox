@@ -15,6 +15,14 @@ Use CSS+HTML to imitate Windows pop-up window
 
 
 ## Styles detail information
+
+<details><summary>Windows11 style</summary>
+Highly restored~
+<br>
+高度还原~
+</details>
+<br>
+
 <details><summary>Windows10 style</summary>
 I just "stole" the code from a phishing site.
 <br>
@@ -33,13 +41,6 @@ I spent whole day and finally made it. The UI is really similar and I will fix s
 I don't know what's wrong with the Edge browser on my computer, but the effect is different from other computers. It is now fixed.
 <br>
 我电脑Edge浏览器不知道犯什么病，就是和别的电脑出来的效果不一样。现在已经修复。
-
-</details>
-<br>
-<details><summary>Windows11 style</summary>
-Highly restored~
-<br>
-高度还原~
 </details>
 <br>
 

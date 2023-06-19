@@ -12,6 +12,13 @@ Use CSS+HTML to imitate Windows pop-up window
 <br>
 </p>
 
+## Compatibility
+
+Microsoft Edge ✅
+Google Chrome ✅
+Firefox ✅
+Opera Internet Browser ✅
+Internet Explorer ❌
 
 
 ## Styles detail information

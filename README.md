@@ -64,9 +64,9 @@ I gave up that Messagebox because I wrote it when I just began to learn CSS and 
 
 ## Contribute
 
-Your Pull requests are always acceptable if they are no problems, thanks to those who contribute this repository.
+Your Pull requests are always acceptable if they are no problems.
 <br>
-如果没有问题，你的拉取请求总是可以接受的，感谢那些贡献这个存储库的人。(人话：你PR没啥问题我就合并）
+你PR没啥问题我就合并
 
 ## Alarming
 ### This repository is ONLY used for educational purpose. For example, you can use this repository to show people how a phishing site works, but you CAN NOT create a phishing site.

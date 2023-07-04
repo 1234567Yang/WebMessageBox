@@ -1,4 +1,7 @@
+//不是很懂js，代码官方文档和网上扣的，大佬勿喷勿喷勿喷
+
 var text = "";
+
 
 function direct(){
   getVersion()

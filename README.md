@@ -31,6 +31,10 @@ Internet Explorer ❌
 Highly imitated~
 <br>
 高度还原~
+<p align="center">
+  <img width="60%" src="https://github.com/1234567Yang/WebMessageBox/blob/main/photos/Win11_zipped.gif?raw=true">
+  <br>
+</p>
 </details>
 <br>
 
@@ -38,6 +42,10 @@ Highly imitated~
 I just "stole" the code from a phishing site.
 <br>
 我刚刚从钓鱼网站那里白嫖了这个代码。让我们一起感谢钓鱼网站对于开源的贡献。
+<p align="center">
+  <img width="60%" src="https://github.com/1234567Yang/WebMessageBox/blob/main/photos/Win10_zipped.gif?raw=true">
+  <br>
+</p>
 </details>
 <br>
 
@@ -45,6 +53,10 @@ I just "stole" the code from a phishing site.
 I spent whole day and finally made it. The UI is really similar and I will fix small difference later.
 <br>
 一整天时间弄出来的，基本复原Windows7信息框，小问题以后修。
+<p align="center">
+  <img width="60%" src="https://github.com/1234567Yang/WebMessageBox/blob/main/photos/Win7_zipped.gif?raw=true">
+  <br>
+</p>
   
 <br><br>
 2023/6/17 Supplement:(2023/6/17补充)

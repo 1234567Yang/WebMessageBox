@@ -1,0 +1,141 @@
+@font-face {
+  font-family: "WindowsRegular";
+  src: url("Windows.ttf") format("truetype");
+}
+*{
+  font-family: "WindowsRegular";
+}
+body{
+  background-color:rgb(0,130,130);
+}
+.boder{
+  border-top-color: rgb(232,232,234);
+  border-top-width:2px;
+  border-top-style:solid;
+  border-left-color: rgb(232,232,234);
+  border-left-width:2px;
+  border-left-style:solid;
+  
+  border-bottom-color: rgb(36,36,36);
+  border-bottom-width:2px;
+  border-bottom-style:solid;
+  border-right-color: rgb(36,36,36);
+  border-right-width:2px;
+  border-right-style:solid;
+}
+
+.clickboder:active{
+  border-top-color:rgb(36,36,36);
+  border-top-width:2px;
+  border-top-style:solid;
+  border-left-color: rgb(36,36,36);
+  border-left-width:2px;
+  border-left-style:solid;
+  
+  border-bottom-color: rgb(232,232,234);
+  border-bottom-width:2px;
+  border-bottom-style:solid;
+  border-right-color: rgb(232,232,234);
+  border-right-width:2px;
+  border-right-style:solid;
+}
+
+.main-block{
+  position:relative;
+  left:calc(50vw - 290px / 2);
+  top:calc(50vh - 120px / 2);
+  background-color:rgb(195,195,195);
+  width:290px;
+  height:120px;
+}
+.toolbar{
+  position:relative;
+  background-color:rgb(2,0,127);
+  color:white;
+  width:100%;
+  height:23px;
+}
+
+.toolbarText{
+  position:relative;
+  left:5px;
+  font-size:16x;
+}
+
+.toolbarButtonGroup{
+  position: absolute;
+  right: 2px;
+  top: 0px;
+}
+
+.toolButton{
+  position:relative;
+  top:2px;
+  height: 15px;
+  width:15px;
+  
+  background-color: rgb(195,195,193);
+  margin-top:0px;
+  /*
+  font-size:20px;
+  line-height:0.1px;
+  padding-left:0px;
+  */
+}
+
+.toolButton:active > svg{
+  position:relative;
+  top:1px;
+}
+.text{
+  position:relative;
+  width:100%;
+  height:calc(70px - 16px);
+}
+
+.leftSideLogo{
+  position:absolute;
+  left:10px;
+  top:calc(50% - 30px / 2);
+  height:30px;
+  width:30px;
+  max-width: 100%;
+}
+.textMessage{
+  position:absolute;
+  /*left:calc(10px * 2 + 30px);
+  top:5px;
+  width:calc(100% - 10px * 3 - 30px);
+  height:calc(100% - 5px * 2);*/
+  left:calc(8px * 2 + 30px);
+  top:17px;
+  width:calc(100% - 8px * 3 - 30px);
+  height:calc(100% - 17px * 2);
+  font-size:13px;
+  text-align:center;
+  word-break:break-word;
+  overflow:hidden;
+  letter-spacing: -0.5px;
+}
+
+.block-buttons{
+  width:100%;
+}
+
+.BlockButton{
+  position:relative;
+  left:calc(50% - 95px / 2);
+  height:27px;
+  width:95px;
+  line-height:25px;
+  font-size:15px;
+  border-style:solid;
+  border-width:1px;
+  border-color:rgb(22,22,22);
+  box-shadow:inset 1px 1px 1px 1px rgb(226,226,226),0px 0px 1px 1px rgb(128,128,128);
+  outline:none;
+  background-color:rgb(195,195,195);
+}
+.BlockButton:active{
+  box-shadow:inset 1px 1px 1px 1px rgb(128,128,128),1px 1px 1px 1px rgb(226,226,226);
+}

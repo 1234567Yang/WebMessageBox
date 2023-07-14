@@ -4,6 +4,7 @@
 }
 *{
   font-family: "WindowsRegular";
+  user-select:none;
 }
 body{
   background-color:rgb(0,130,130);

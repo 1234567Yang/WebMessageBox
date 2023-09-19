@@ -22,11 +22,11 @@ function check(){
 
 function jump(){
   var href = "";
-  if(text = "Windows11"){
+  if(text == "Windows11"){
     href = "./Windows11 Style";
-  }else if(text = "Windows10"){
+  }else if(text == "Windows10"){
     href = "./Windows10 Style";
-  }else if(text = "Windows7"){
+  }else if(text == "Windows7"){
     href = "./Windows7 Style";
   }else{
     href = "./Windows10 Style"; //瞎猫碰死耗子
@@ -58,6 +58,7 @@ function getVersion() { //异步方法，return之后处理
         .then(ua => {
             if (navigator.userAgentData.platform === "Windows") {
                 const majorPlatformVersion = parseInt(ua.platformVersion.split('.')[0]);
+		console.log(majorPlatformVersion);
                 if (majorPlatformVersion >= 13) {
                     text = "Windows11";
                 }
